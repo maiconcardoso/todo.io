@@ -21,11 +21,11 @@ export class AppComponent {
     if (index != -1) { this.todos.splice(index, 1); }
   }
 
-  markAsDone() {
-
+  markAsDone(todo: Todo) {
+    todo.done = true;
   }
 
-  markAsUndone() {
-
+  markAsUndone(todo: Todo) {
+    todo.done = false;
   }
 }
